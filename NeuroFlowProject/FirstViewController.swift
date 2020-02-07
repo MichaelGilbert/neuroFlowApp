@@ -36,7 +36,7 @@ extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSou
 
 extension FirstViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionViewWidth = collectionView.bounds.width
+        let collectionViewWidth = collectionView.bounds.width - 5;
         let collectionViewHeight = collectionView.bounds.height
         let numberOfRows:CGFloat = 4.0
         var size:CGSize
