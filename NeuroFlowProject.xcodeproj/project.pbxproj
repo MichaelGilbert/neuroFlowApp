@@ -15,6 +15,7 @@
 		4C68D41323ECEDE5001701E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C68D41223ECEDE5001701E9 /* Assets.xcassets */; };
 		4C68D41623ECEDE5001701E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C68D41423ECEDE5001701E9 /* LaunchScreen.storyboard */; };
 		4C68D42123ECEDE6001701E9 /* NeuroFlowProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C68D42023ECEDE6001701E9 /* NeuroFlowProjectTests.swift */; };
+		4C68D42C23EDA407001701E9 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C68D42B23EDA407001701E9 /* ColorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4C68D41C23ECEDE6001701E9 /* NeuroFlowProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroFlowProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C68D42023ECEDE6001701E9 /* NeuroFlowProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroFlowProjectTests.swift; sourceTree = "<group>"; };
 		4C68D42223ECEDE6001701E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C68D42B23EDA407001701E9 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				4C68D41223ECEDE5001701E9 /* Assets.xcassets */,
 				4C68D41423ECEDE5001701E9 /* LaunchScreen.storyboard */,
 				4C68D41723ECEDE5001701E9 /* Info.plist */,
+				4C68D42B23EDA407001701E9 /* ColorCell.swift */,
 			);
 			path = NeuroFlowProject;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				4C68D40E23ECEDE3001701E9 /* SecondViewController.swift in Sources */,
 				4C68D40C23ECEDE3001701E9 /* FirstViewController.swift in Sources */,
 				4C68D40823ECEDE3001701E9 /* AppDelegate.swift in Sources */,
+				4C68D42C23EDA407001701E9 /* ColorCell.swift in Sources */,
 				4C68D40A23ECEDE3001701E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
