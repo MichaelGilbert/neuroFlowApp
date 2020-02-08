@@ -44,6 +44,7 @@ extension FirstViewController: UICollectionViewDelegateFlowLayout {
         switch(indexPath.row) {
         case 0, 5:
             size = CGSize(width: collectionViewWidth, height: collectionViewHeight/numberOfRows)
+            
         case 1...4:
             size = CGSize(width: collectionViewWidth/2, height: collectionViewHeight/numberOfRows)
         
@@ -53,7 +54,6 @@ extension FirstViewController: UICollectionViewDelegateFlowLayout {
         
         return size
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0

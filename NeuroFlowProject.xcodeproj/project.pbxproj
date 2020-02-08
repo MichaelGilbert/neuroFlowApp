@@ -20,6 +20,7 @@
 		4C68D43123EDD0DD001701E9 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C68D42F23EDD0DD001701E9 /* PersonCell.xib */; };
 		4C68D43A23EE0AD5001701E9 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C68D43823EE0AD5001701E9 /* SectionHeaderView.swift */; };
 		4C68D43B23EE0AD5001701E9 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C68D43923EE0AD5001701E9 /* SectionHeaderView.xib */; };
+		4C68D43F23EE1E06001701E9 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C68D43E23EE1E06001701E9 /* PlayerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4C68D42F23EDD0DD001701E9 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		4C68D43823EE0AD5001701E9 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		4C68D43923EE0AD5001701E9 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		4C68D43E23EE1E06001701E9 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +93,10 @@
 		4C68D40623ECEDE3001701E9 /* NeuroFlowProject */ = {
 			isa = PBXGroup;
 			children = (
+				4C68D44023EE36E2001701E9 /* ViewControllers */,
 				4C68D42D23EDD096001701E9 /* Views */,
 				4C68D40723ECEDE3001701E9 /* AppDelegate.swift */,
 				4C68D40923ECEDE3001701E9 /* SceneDelegate.swift */,
-				4C68D40B23ECEDE3001701E9 /* FirstViewController.swift */,
-				4C68D40D23ECEDE3001701E9 /* SecondViewController.swift */,
 				4C68D40F23ECEDE3001701E9 /* Main.storyboard */,
 				4C68D41223ECEDE5001701E9 /* Assets.xcassets */,
 				4C68D41423ECEDE5001701E9 /* LaunchScreen.storyboard */,
@@ -123,6 +124,16 @@
 				4C68D43923EE0AD5001701E9 /* SectionHeaderView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4C68D44023EE36E2001701E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C68D40B23ECEDE3001701E9 /* FirstViewController.swift */,
+				4C68D40D23ECEDE3001701E9 /* SecondViewController.swift */,
+				4C68D43E23EE1E06001701E9 /* PlayerDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 				4C68D43A23EE0AD5001701E9 /* SectionHeaderView.swift in Sources */,
 				4C68D43023EDD0DD001701E9 /* PersonCell.swift in Sources */,
 				4C68D40C23ECEDE3001701E9 /* FirstViewController.swift in Sources */,
+				4C68D43F23EE1E06001701E9 /* PlayerDetailViewController.swift in Sources */,
 				4C68D40823ECEDE3001701E9 /* AppDelegate.swift in Sources */,
 				4C68D42C23EDA407001701E9 /* ColorCell.swift in Sources */,
 				4C68D40A23ECEDE3001701E9 /* SceneDelegate.swift in Sources */,

@@ -15,10 +15,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var scoresTableView: UITableView!
     var scoreData: NSMutableArray?
     
-//    struct Scores: Codable {
-//        var array: [Person]?
-//    }
-    
     struct Groups: Codable {
         let males: [Person]?
         let females: [Person]?
@@ -27,8 +23,10 @@ class SecondViewController: UIViewController {
     struct Person: Codable {
         let name: String?
         let score: Int?
-        let date_created: Date?
+        let date_created: Double?
     }
+    
+    var selectedPerson: Person?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +68,12 @@ class SecondViewController: UIViewController {
                 print("No Data")
             }
         }.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PlayerDetailViewController{
+            destination.details = selectedPerson
+        }
     }
 }
 
@@ -117,9 +121,16 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return headerHeight
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let scoreData = scoreData?[indexPath.section] as? Array<Person> {
+            selectedPerson = scoreData[indexPath.row]
+            performSegue(withIdentifier: "detailSeque", sender: self)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
 }
